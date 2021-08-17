@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="servlet初始话(maven,tomcat)" />
+    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="servlet初始话(maven,tomcat)">
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/medInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,15 +85,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MedSysApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
