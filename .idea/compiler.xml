@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="classGroup" />
+        <module name="Fitst" />
+        <module name="medSys" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="classGroup" target="11" />
+      <module name="Fitst" target="1.8" />
+      <module name="medSys" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
