@@ -9,27 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="pojo类和oracle数据库建表插值">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/cateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/saleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="mapper接口">
+      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/cate.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/drug.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/manager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/sale.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/medInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/drugMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Drug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/test/java/com/ni/medsys/MedSysApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/test/java/com/ni/medsys/MedSysApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +219,7 @@
       <workItem from="1629216761578" duration="1981000" />
       <workItem from="1629221890596" duration="272000" />
       <workItem from="1629253073785" duration="52000" />
-      <workItem from="1629254756023" duration="8540000" />
+      <workItem from="1629254756023" duration="11253000" />
     </task>
     <task id="LOCAL-00001" summary="servlet初始话(maven,tomcat)">
       <created>1629082255988</created>
@@ -254,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629259492112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mapper接口">
+      <created>1629265338224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629265338224</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +298,7 @@
     <MESSAGE value="servlet初始话(maven,tomcat)" />
     <MESSAGE value="pojo类" />
     <MESSAGE value="pojo类和oracle数据库建表插值" />
-    <option name="LAST_COMMIT_MESSAGE" value="pojo类和oracle数据库建表插值" />
+    <MESSAGE value="mapper接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="mapper接口" />
   </component>
 </project>

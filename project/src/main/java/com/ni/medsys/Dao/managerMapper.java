@@ -1,6 +1,5 @@
 package com.ni.medsys.Dao;
 
-import com.ni.medsys.pojo.Drug;
 import com.ni.medsys.pojo.Manager;
 
 public interface managerMapper {

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--命名空间绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.ni.medsys.Dao.cateMapper">
+    <!--    select查询语句,类似于原来重写接口的方法-->
+    <!--    resultType为返回类型-->
+    <select id="getCateList" resultType="com.ni.medsys.pojo.Category">
+        select * from scott.category;
+    </select>
+
+    <!--    id和前面的参数名和函数名相同-->
+    <select id="getCateSingle" resultType="com.ni.medsys.pojo.Category" parameterType="com.ni.medsys.pojo.Category">
+        select * from scott.category where id = #{id}
+    </select>
+
+    <select id="addCate" parameterType="com.ni.medsys.pojo.Category">
+        insert into scott.category values (#{id},#{cname},#{createtime});
+    </select>
+
+    <select id="updateCate" parameterType="com.ni.medsys.pojo.Category" >
+        update scott.category set cname=#{cname},createtime=#{createtime},description=#{description} where id=#{id};
+    </select>
+
+    <select id="deleteCate" parameterType="com.ni.medsys.pojo.Category">
+        delete from scott.category where id=#{id};
+    </select>
+
+
+</mapper>
