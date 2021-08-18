@@ -9,20 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="pojo类">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Drug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b/storage_v2/_src_/schema/SCOTT.v0axBA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b/storage_v2/_src_/schema/SCOTT.v0axBA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="pojo类和oracle数据库建表插值">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/cateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/saleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/medInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/drugMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Drug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Sale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +42,7 @@
         <option value="Jsp File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -79,14 +87,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OJDBC-Full/ojdbc6.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.1150748" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.44109946" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -222,7 +231,7 @@
       <workItem from="1629216761578" duration="1981000" />
       <workItem from="1629221890596" duration="272000" />
       <workItem from="1629253073785" duration="52000" />
-      <workItem from="1629254756023" duration="4193000" />
+      <workItem from="1629254756023" duration="8540000" />
     </task>
     <task id="LOCAL-00001" summary="servlet初始话(maven,tomcat)">
       <created>1629082255988</created>
@@ -238,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629222165645</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pojo类和oracle数据库建表插值">
+      <created>1629259492112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629259492112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +302,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="servlet初始话(maven,tomcat)" />
     <MESSAGE value="pojo类" />
-    <option name="LAST_COMMIT_MESSAGE" value="pojo类" />
+    <MESSAGE value="pojo类和oracle数据库建表插值" />
+    <option name="LAST_COMMIT_MESSAGE" value="pojo类和oracle数据库建表插值" />
   </component>
 </project>

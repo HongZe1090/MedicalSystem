@@ -1,10 +1,12 @@
 package com.ni.medsys.pojo;
 
 import lombok.Data;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Date;
 
 @Data
+@Repository
 public class Drug {
   private String Id;
   private String dNode;
