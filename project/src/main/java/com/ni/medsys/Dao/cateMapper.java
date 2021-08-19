@@ -2,6 +2,7 @@ package com.ni.medsys.Dao;
 
 import com.ni.medsys.pojo.Category;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,14 +15,14 @@ public interface cateMapper {
     List<Category> getCateList();
 
     //查询单个，字段查询上层再封装
-    Category getCateSingle(Category category);
+    Category getCateSingle(@Param("col") String col, @Param("obValue") String obValue);
 
     //增加
-    int addCate(Category category);
+    String addCate(Category category);
 
     //删除
-    int deleteCate(Category category);
+    String deleteCate(@Param("id") String id);
 
     //修改
-    int updateCate(Category category);
+    String updateCate(Category category);
 }

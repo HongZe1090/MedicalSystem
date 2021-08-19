@@ -8,24 +8,24 @@
     <!--    select查询语句,类似于原来重写接口的方法-->
     <!--    resultType为返回类型-->
     <select id="getCateList" resultType="com.ni.medsys.pojo.Category">
-        select * from scott.category
+        select * from mybatis.category
     </select>
 
     <!--    id和前面的参数名和函数名相同-->
-    <select id="getCateSingle" resultType="com.ni.medsys.pojo.Category" parameterType="com.ni.medsys.pojo.Category">
-        select * from scott.category where id = #{id}
+    <select id="getCateSingle" resultType="com.ni.medsys.pojo.Category">
+        select * from mybatis.category where ${col} = #{obValue}
     </select>
 
     <select id="addCate" parameterType="com.ni.medsys.pojo.Category">
-        insert into scott.category values (#{id},#{cname},#{createtime})
+        insert into mybatis.category values (#{id},#{cName},#{createTime},#{description})
     </select>
 
     <select id="updateCate" parameterType="com.ni.medsys.pojo.Category" >
-        update scott.category set cname=#{cname},createtime=#{createtime},description=#{description} where id=#{id}
+        update mybatis.category set cname=#{cName},createtime=#{createTime},description=#{description} where id=#{id}
     </select>
 
-    <select id="deleteCate" parameterType="com.ni.medsys.pojo.Category">
-        delete from scott.category where id=#{id}
+    <select id="deleteCate">
+        delete from mybatis.category where id=#{id}
     </select>
 
 

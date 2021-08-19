@@ -1,12 +1,13 @@
 package com.ni.medsys.pojo;
 
 import lombok.Data;
-import org.springframework.stereotype.Repository;
+import lombok.Getter;
+import org.springframework.stereotype.Component;
 
 import java.sql.Date;
 
 @Data
-@Repository
+@Component
 public class Category {
   private String id;
   private String cName;

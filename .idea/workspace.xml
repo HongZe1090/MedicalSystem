@@ -9,13 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="mapper接口">
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/cate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/drug.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/manager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/sale.xml" afterDir="false" />
+    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="Mybatis mapper接口，实现编写">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/cateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/cateMy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b/storage_v2/_src_/schema/SCOTT.v0axBA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/596b9341-454d-4205-99d4-46893470c11b/storage_v2/_src_/schema/SCOTT.v0axBA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/cateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/cateMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/resources/Mybatis/cate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/cate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/test/java/com/ni/medsys/MedSysApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/test/java/com/ni/medsys/MedSysApplicationTests.java" afterDir="false" />
     </list>
@@ -29,8 +36,8 @@
       <list>
         <option value="Jsp File" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,8 +74,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -99,6 +110,22 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedSysApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="medSys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ni.medsys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ni.medsys" />
+      <option name="MAIN_CLASS_NAME" value="com.ni.medsys.MedSysApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,6 +230,11 @@
         <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MedSysApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -219,7 +251,11 @@
       <workItem from="1629216761578" duration="1981000" />
       <workItem from="1629221890596" duration="272000" />
       <workItem from="1629253073785" duration="52000" />
-      <workItem from="1629254756023" duration="11253000" />
+      <workItem from="1629254756023" duration="13876000" />
+      <workItem from="1629271048626" duration="4992000" />
+      <workItem from="1629291999672" duration="5048000" />
+      <workItem from="1629335627209" duration="2251000" />
+      <workItem from="1629355545666" duration="5419000" />
     </task>
     <task id="LOCAL-00001" summary="servlet初始话(maven,tomcat)">
       <created>1629082255988</created>
@@ -249,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629265338224</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mybatis mapper接口，实现编写">
+      <created>1629268104448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629268104448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +342,21 @@
     <MESSAGE value="pojo类" />
     <MESSAGE value="pojo类和oracle数据库建表插值" />
     <MESSAGE value="mapper接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="mapper接口" />
+    <MESSAGE value="Mybatis mapper接口，实现编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mybatis mapper接口，实现编写" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

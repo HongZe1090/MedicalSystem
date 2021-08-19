@@ -1,11 +1,14 @@
 package com.ni.medsys;
 
 import com.ni.medsys.Dao.cateMapper;
+import com.ni.medsys.pojo.Category;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.activation.DataSource;
+import java.sql.Date;
+import java.util.List;
+
 
 @SpringBootTest
 class MedSysApplicationTests {
@@ -13,13 +16,16 @@ class MedSysApplicationTests {
     @Autowired
     private cateMapper cateMapper;
 
-    @Autowired
-    DataSource dataSource; //从数据库中取数据源
-
     @Test
     void contextLoads() {
-
-
+        Category cate = new Category();
+        cate.setId("2005");
+        cate.setCName("蟑螂药");
+        cate.setCreateTime(new Date(2019,8,19));
+        cate.setDescription("被蟑螂咬了就吃这个");
+        System.out.println(cateMapper.addCate(cate));
+        cate.setDescription("被蟑螂咬了就吃这个,当然蟑螂也可以吃哦");
+        System.out.println(cateMapper.updateCate(cate));
     }
 
 }

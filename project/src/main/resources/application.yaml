@@ -1,17 +1,18 @@
 # 应用名称
 spring.application.name: medSys
 # 应用服务 WEB 访问端口
-server.port: 8080
+server.port: 8085
+
 
 spring:
   datasource:
-    username: scott
-    password: 123456
+    username: root
+    password: hanjinhao
     # 新版mysql及其包要配时区
-    url: jdbc:oracle:thin:@192.168.10.129:1521:helowin
-    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
 
 # 整合mybatis 类似原来mybatis中的configuration文件 classpath代表当前目录
 mybatis:
-  type-aliases-package: com.ni.medsys.pojp
-  mapper-locations: classpath:Mybatis/*.xml
+  type-aliases-package: com.ni.medsys.pojo
+  mapper-locations: classpath:Mybatis/{*}.My.xml
