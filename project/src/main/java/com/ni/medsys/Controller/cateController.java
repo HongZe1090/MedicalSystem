@@ -4,10 +4,7 @@ import com.ni.medsys.Dao.cateMapper;
 import com.ni.medsys.pojo.Category;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.util.Date;
@@ -41,17 +38,18 @@ public class cateController {
         return reult;
     }
 
+    @GetMapping("/addCate")
+    @CrossOrigin
+    public String addCate(Category cate){
+        System.out.println(cate);
+        String reult = catemapper.addCate(cate);
+        return reult;
+    }
+
     @GetMapping("/updateCate/{cate}")
     @CrossOrigin
     public String updaCate(@PathVariable("cate") Category cate){
         String reult = catemapper.updateCate(cate);
-        return reult;
-    }
-
-    @GetMapping("/addCate/{cate}")
-    @CrossOrigin
-    public String addCate(@PathVariable("cate") Category cate){
-        String reult = catemapper.addCate(cate);
         return reult;
     }
 }

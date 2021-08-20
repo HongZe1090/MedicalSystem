@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="manager drug相关接口完成">
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/saleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/sale.My.xml" afterDir="false" />
+    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="sale相关接口完成">
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/conf/GlobalCorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/saleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/saleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/cateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/cateController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,19 +99,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MedSysApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MedSysApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="medSys" />
       <extension name="coverage">
@@ -255,7 +241,9 @@
       <workItem from="1629291999672" duration="5048000" />
       <workItem from="1629335627209" duration="2251000" />
       <workItem from="1629355545666" duration="8007000" />
-      <workItem from="1629421591792" duration="4713000" />
+      <workItem from="1629421591792" duration="5783000" />
+      <workItem from="1629459898233" duration="5660000" />
+      <workItem from="1629473835250" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="servlet初始话(maven,tomcat)">
       <created>1629082255988</created>
@@ -306,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629426425416</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sale相关接口完成">
+      <created>1629427357335</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629427357335</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +354,8 @@
     <MESSAGE value="Mybatis mapper接口，实现编写" />
     <MESSAGE value="Category表的增删改查，resultful风格编写前端接口测试完成" />
     <MESSAGE value="manager drug相关接口完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="manager drug相关接口完成" />
+    <MESSAGE value="sale相关接口完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="sale相关接口完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
