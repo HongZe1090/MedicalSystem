@@ -9,16 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="Category表的增删改查，resultful风格编写前端接口测试完成">
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/drugController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/managerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/drug.My.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/manager.My.xml" afterDir="false" />
+    <list default="true" id="6fe00342-8321-49f5-81f1-92f3b76c608d" name="Default Changelist" comment="manager drug相关接口完成">
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/saleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/resources/Mybatis/sale.My.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/cateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Controller/cateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/drugMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/drugMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/managerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/test/java/com/ni/medsys/MedSysApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/test/java/com/ni/medsys/MedSysApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/saleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/ni/medsys/Dao/saleMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +255,7 @@
       <workItem from="1629291999672" duration="5048000" />
       <workItem from="1629335627209" duration="2251000" />
       <workItem from="1629355545666" duration="8007000" />
-      <workItem from="1629421591792" duration="3761000" />
+      <workItem from="1629421591792" duration="4713000" />
     </task>
     <task id="LOCAL-00001" summary="servlet初始话(maven,tomcat)">
       <created>1629082255988</created>
@@ -304,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629361386364</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="manager drug相关接口完成">
+      <created>1629426425416</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629426425416</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +358,8 @@
     <MESSAGE value="mapper接口" />
     <MESSAGE value="Mybatis mapper接口，实现编写" />
     <MESSAGE value="Category表的增删改查，resultful风格编写前端接口测试完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category表的增删改查，resultful风格编写前端接口测试完成" />
+    <MESSAGE value="manager drug相关接口完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="manager drug相关接口完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
