@@ -9,5 +9,5 @@ public interface saleMapper {
     //查询所有
     List<Sale> getSaleList();
     //增加
-    int addSale(Sale sale);
+    String addSale(Sale sale);
 }

@@ -47,4 +47,11 @@ public class cateController {
         String reult = catemapper.updateCate(cate);
         return reult;
     }
+
+    @GetMapping("/addCate/{cate}")
+    @CrossOrigin
+    public String addCate(@PathVariable("cate") Category cate){
+        String reult = catemapper.addCate(cate);
+        return reult;
+    }
 }

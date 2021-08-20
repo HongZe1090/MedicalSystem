@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--命名空间绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.ni.medsys.Dao.drugMapper">
+    <!--    select查询语句,类似于原来重写接口的方法-->
+    <!--    resultType为返回类型-->
+    <select id="getDrugList" resultType="com.ni.medsys.pojo.Drug">
+        select * from mybatis.drug
+    </select>
+
+    <!--    id和前面的参数名和函数名相同-->
+    <select id="getDrugSingle" resultType="com.ni.medsys.pojo.Drug">
+        select * from mybatis.drug where ${col} = #{obValue}
+    </select>
+
+    <select id="addDrug" parameterType="com.ni.medsys.pojo.Drug">
+        insert into mybatis.drug values (#{Id},#{dNode},#{dName},#{price},#{stockCount},#{productionDate},#{manufacturer},#{categoryId})
+    </select>
+
+    <select id="updateDrug" parameterType="com.ni.medsys.pojo.Drug" >
+        update mybatis.drug set dcode=#{dNode},dname=#{dName},price=#{price},stockCount=#{stockCount},productiondate=#{productionDate},manufacturer=#{manufacturer},categoryid=#{categoryId} where id=#{id}
+    </select>
+
+    <select id="deleteDrug">
+        delete from mybatis.drug where id=#{id}
+    </select>
+
+
+</mapper>
