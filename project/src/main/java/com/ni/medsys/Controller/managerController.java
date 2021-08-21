@@ -1,6 +1,7 @@
 package com.ni.medsys.Controller;
 import com.ni.medsys.Dao.managerMapper;
 import com.ni.medsys.pojo.Manager;
+import com.ni.medsys.pojo.ReInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,13 +24,19 @@ public class managerController {
         return managerList;
     }
 
-    @GetMapping("/querySingleManager")
+    @GetMapping("/querySingleManager/{username}/{password}")
     @CrossOrigin
-    public Manager getManager(String value){
-        System.out.println("555");
-//        System.out.println(username+password);
-//        Manager result = managermapper.getManagerSingle("id",username);
-//        return result;
+    public ReInfo getManager(@PathVariable("username") String username,@PathVariable("password") String password){
+        System.out.println(username+password);
+        Manager result = managermapper.getManagerSingle("username",username);
+        if(result.getPassWord().equals(password)) {
+            ReInfo info = new ReInfo(username, result.getId(), username + password, result.getManagerType());
+            return info;
+        }
+        else {
+            ReInfo info = new ReInfo("error",result.getId(), username + password, result.getManagerType());
+            return info;
+        }
     }
 
     @GetMapping("/deleteManager/{id}")

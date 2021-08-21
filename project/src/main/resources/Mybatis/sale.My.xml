@@ -13,7 +13,7 @@
 
     <!--    id和前面的参数名和函数名相同-->
     <select id="addSale" resultType="com.ni.medsys.pojo.Sale">
-        insert into mybatis.sale values (#{saleid},#{saledate},#{dcode},#{salecount},#{saleprice},#{managerid})
+        insert into mybatis.sale values (#{saleId},#{saleDate},#{dcode},#{saleCount},#{salePrice},#{managerId})
     </select>
 
 </mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--命名空间绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.ni.medsys.Dao.managerMapper">
+    <!--    select查询语句,类似于原来重写接口的方法-->
+    <!--    resultType为返回类型-->
+    <select id="getManagerList" resultType="com.ni.medsys.pojo.Manager">
+        select * from scott.manager
+    </select>
+
+    <!--    id和前面的参数名和函数名相同-->
+    <select id="getManagerSingle" resultType="com.ni.medsys.pojo.Manager">
+        select * from scott.manager where ${col} = #{obValue}
+    </select>
+
+    <select id="addManager" parameterType="com.ni.medsys.pojo.Manager">
+        insert into scott.manager values (#{id},#{userName},#{passWord},#{fullName},#{movePhone},#{managerType})
+    </select>
+
+    <select id="updateManager>" parameterType="com.ni.medsys.pojo.Manager" >
+        update scott.manager set username=#{userName},password=#{passWord},fullname=#{fullName},movephone=#{movePhone},managertype=#{managerType} where id=#{id}
+    </select>
+
+    <select id="deleteManager">
+        delete from scott.Manager where id=#{id}
+    </select>
+
+
+</mapper>

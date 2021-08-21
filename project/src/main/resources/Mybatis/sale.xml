@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--命名空间绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.ni.medsys.Dao.saleMapper">
+    <!--    select查询语句,类似于原来重写接口的方法-->
+    <!--    resultType为返回类型-->
+    <select id="getSaleList" resultType="com.ni.medsys.pojo.Sale">
+        select * from scott.sale
+    </select>
+
+    <!--    id和前面的参数名和函数名相同-->
+    <select id="addSale" resultType="com.ni.medsys.pojo.Sale">
+        insert into scott.sale values (#{saleId},#{saleDate},#{dcode},#{saleCount},#{salePrice},#{managerId})
+    </select>
+
+</mapper>
