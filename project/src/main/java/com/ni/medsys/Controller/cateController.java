@@ -46,9 +46,10 @@ public class cateController {
         return reult;
     }
 
-    @GetMapping("/updateCate/{cate}")
+    @GetMapping("/updateCate")
     @CrossOrigin
-    public String updaCate(@PathVariable("cate") Category cate){
+    public String updaCate(Category cate){
+        System.out.println(cate);
         String reult = catemapper.updateCate(cate);
         return reult;
     }

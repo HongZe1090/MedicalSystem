@@ -39,16 +39,17 @@ public class drugController {
         return reult;
     }
 
-    @GetMapping("/updateDrug/{Drug}")
+    @GetMapping("/updateDrug")
     @CrossOrigin
-    public String updadrug(@PathVariable("Drug") Drug drug){
+    public String updadrug(Drug drug){
         String reult = drugmapper.updateDrug(drug);
         return reult;
     }
 
-    @GetMapping("/addDrug/{Drug}")
+    @GetMapping("/addDrug")
     @CrossOrigin
-    public String addDrug(@PathVariable("Drug") Drug drug){
+    public String addDrug(Drug drug){
+        System.out.println(drug.getId());
         String reult = drugmapper.addDrug(drug);
         return reult;
     }

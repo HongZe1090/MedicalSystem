@@ -21,7 +21,7 @@ class MedSysApplicationTests {
     void contextLoads() {
         Category cate = new Category();
         cate.setId("2005");
-        cate.setCName("蟑螂药");
+        cate.setcName("蟑螂药");
         cate.setCreateTime(new Date(2019,8,19));
         cate.setDescription("被蟑螂咬了就吃这个");
         System.out.println(drugMapper.getDrugList());

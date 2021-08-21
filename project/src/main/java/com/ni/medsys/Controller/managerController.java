@@ -23,11 +23,13 @@ public class managerController {
         return managerList;
     }
 
-    @GetMapping("/querySingleManager/{col}/{obValue}")
+    @GetMapping("/querySingleManager")
     @CrossOrigin
-    public Manager getManager(@PathVariable("col") String col, @PathVariable("obValue") String obValue){
-        Manager result = managermapper.getManagerSingle(col,obValue);
-        return result;
+    public Manager getManager(String value){
+        System.out.println("555");
+//        System.out.println(username+password);
+//        Manager result = managermapper.getManagerSingle("id",username);
+//        return result;
     }
 
     @GetMapping("/deleteManager/{id}")
@@ -38,16 +40,16 @@ public class managerController {
         return reult;
     }
 
-    @GetMapping("/updateManager/{Manager}")
+    @GetMapping("/updateManager")
     @CrossOrigin
-    public String updaManager(@PathVariable("Manager") Manager manager){
+    public String updaManager( Manager manager){
         String reult = managermapper.updateManager(manager);
         return reult;
     }
 
-    @GetMapping("/addManager/{Manager}")
+    @GetMapping("/addManager")
     @CrossOrigin
-    public String addDrug(@PathVariable("Manager") Manager manager){
+    public String addDrug( Manager manager){
         String reult = managermapper.addManager(manager);
         return reult;
     }

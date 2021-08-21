@@ -24,9 +24,9 @@ public class saleController {
         return saleList;
     }
 
-    @GetMapping("/addSale/{Sale}")
+    @GetMapping("/addSale")
     @CrossOrigin
-    public String addSale(@PathVariable("Sale") Sale sale){
+    public String addSale(Sale sale){
         String reult = salemapper.addSale(sale);
         return reult;
     }

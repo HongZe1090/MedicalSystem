@@ -17,11 +17,11 @@
     </select>
 
     <select id="addDrug" parameterType="com.ni.medsys.pojo.Drug">
-        insert into mybatis.drug values (#{Id},#{dNode},#{dName},#{price},#{stockCount},#{productionDate},#{manufacturer},#{categoryId})
+        insert into mybatis.drug values (#{id},#{dCode},#{dName},#{price},#{stockCount},#{productionDate},#{manufacturer},#{categoryId})
     </select>
 
     <select id="updateDrug" parameterType="com.ni.medsys.pojo.Drug" >
-        update mybatis.drug set dcode=#{dNode},dname=#{dName},price=#{price},stockCount=#{stockCount},productiondate=#{productionDate},manufacturer=#{manufacturer},categoryid=#{categoryId} where id=#{id}
+        update mybatis.drug set dcode=#{dCode},dname=#{dName},price=#{price},stockCount=#{stockCount},productiondate=#{productionDate},manufacturer=#{manufacturer},categoryid=#{categoryId} where id=#{id}
     </select>
 
     <select id="deleteDrug">
